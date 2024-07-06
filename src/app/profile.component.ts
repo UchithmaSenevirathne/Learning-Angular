@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
+    standalone: true,
     selector: 'app-profile',
     template: '<h1>Profile Component</h1>',
     styles: ['h1 {color: green; background-color: yellow; }'],
