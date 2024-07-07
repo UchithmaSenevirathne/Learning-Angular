@@ -13,7 +13,16 @@
  <!-- <p app-profile ></p> -->
 
  <!-- multiple selector -->
- <app-profile></app-profile>
+ <!-- <app-profile></app-profile>
  <div app-profile ></div>
  <p app-profile ></p>
- <span app-profile></span>
+ <span app-profile></span> -->
+
+<div>
+    <div app-profile></div>
+    <p app-profile></p>
+    <app-profile></app-profile>
+</div>
+
+<!-- the class name is same as profile component but cause we use emulated encapsulation the css will not apply outside of the component -->
+<div class="uchi">App Component One</div>
