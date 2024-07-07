@@ -1,5 +1,5 @@
 export function changeValue(value: number){
-    return value * 10;
+    return `${value}px`;
 }
 
 export function trimValue(value: string){
