@@ -2,7 +2,15 @@
 //     color: green; background-color: yellow;
 // }
 
-.uchi{
-    background-color: aqua;
-    // color: blueviolet;
+// :host{
+//     display: block;
+//     background-color: aqua;
+//     color: blueviolet;
+// }
+
+//only component u want
+:host-context(.hi-uchi){
+    display: block;
+    background-color: greenyellow;
+    color: blue;
 }

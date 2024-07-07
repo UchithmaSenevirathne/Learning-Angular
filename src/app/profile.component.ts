@@ -12,7 +12,9 @@ import { Component, ViewEncapsulation } from "@angular/core";
     // selector: '[app-profile]:not(p)',
 
     // multiple selector
-    selector: 'app-profile, [app-profile]',
+    // selector: 'app-profile, [app-profile]',
+
+    selector: 'app-profile',
 
     // template: '<h1>Profile Component</h1>',
     templateUrl: './profile.component.html',
@@ -22,7 +24,7 @@ import { Component, ViewEncapsulation } from "@angular/core";
     // encapsulation: ViewEncapsulation.Emulated,
 
     //global style not affected
-    encapsulation: ViewEncapsulation.ShadowDom,
+    // encapsulation: ViewEncapsulation.ShadowDom,
 
     //global and unique style affected
     // encapsulation: ViewEncapsulation.None,
