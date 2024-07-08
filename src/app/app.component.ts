@@ -6,6 +6,7 @@ import CounterComponent from './counter/Counter.component';
 import { GetterInputComponent } from './getter-input/getter-input.component';
 import { PanelComponent } from './panel/panel.component';
 import { CardComponent } from './card/card.component';
+import { HoverClickComponent } from './hover-click/hover-click.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { CardComponent } from './card/card.component';
     GetterInputComponent,
     PanelComponent,
     CardComponent,
+    HoverClickComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
