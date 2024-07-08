@@ -5,6 +5,7 @@ import ProfileComponent from './profile.component';
 import CounterComponent from './counter/Counter.component';
 import { GetterInputComponent } from './getter-input/getter-input.component';
 import { PanelComponent } from './panel/panel.component';
+import { CardComponent } from './card/card.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { PanelComponent } from './panel/panel.component';
     ProfileComponent,
     CounterComponent,
     GetterInputComponent,
-    PanelComponent
+    PanelComponent,
+    CardComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
