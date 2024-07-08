@@ -7,6 +7,7 @@ import { GetterInputComponent } from './getter-input/getter-input.component';
 import { PanelComponent } from './panel/panel.component';
 import { CardComponent } from './card/card.component';
 import { HoverClickComponent } from './hover-click/hover-click.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { HoverClickComponent } from './hover-click/hover-click.component';
     PanelComponent,
     CardComponent,
     HoverClickComponent,
+    LifeCycleHooksComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
