@@ -41,5 +41,11 @@
     <app-getter-input [title]="title"></app-getter-input>
 </div>
 
+<div>
+    <app-panel (childEvent)="dataRecieved($event)"></app-panel>
+</div>
+
+<div *ngIf="recieveDataFromChild">{{recieveDataFromChild}}</div>
+
 <!-- the class name is same as profile component but cause we use emulated encapsulation the css will not apply outside of the component -->
 <!-- <div class="uchi">App Component One</div> -->

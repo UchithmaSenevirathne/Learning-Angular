@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import ProfileComponent from './profile.component';
 import CounterComponent from './counter/Counter.component';
 import { GetterInputComponent } from './getter-input/getter-input.component';
+import { PanelComponent } from './panel/panel.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { GetterInputComponent } from './getter-input/getter-input.component';
     CommonModule,
     ProfileComponent,
     CounterComponent,
-    GetterInputComponent
+    GetterInputComponent,
+    PanelComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -21,4 +23,9 @@ import { GetterInputComponent } from './getter-input/getter-input.component';
 export class AppComponent {
   title = 'testProject';
   counter: number = 20;
+  recieveDataFromChild = '';
+
+  dataRecieved(data: string){
+    this.recieveDataFromChild = data;
+  }
 }
