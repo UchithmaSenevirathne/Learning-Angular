@@ -30,10 +30,15 @@
 
 <div>
     <app-counter  
-    [count]="counter" 
+    [dummynamecounter]="counter" 
     message="welcome message"
     [showcounter]= "'false'"
+    [counterTitle]="title"
     ></app-counter>
+</div>
+
+<div>
+    <app-getter-input [title]="title"></app-getter-input>
 </div>
 
 <!-- the class name is same as profile component but cause we use emulated encapsulation the css will not apply outside of the component -->
