@@ -1,0 +1,11 @@
+<div>Angular life cycle hook</div>
+
+<div>
+    <input type="text" #inputField />
+</div>
+
+<div #scrollContainer class="scroll-container">
+    <div *ngFor="let item of items">{{item}}</div>
+</div>
+
+<button (click)="addItem()">Add Item</button>
