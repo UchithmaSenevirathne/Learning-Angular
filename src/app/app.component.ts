@@ -16,6 +16,7 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { AdminProfileComponent } from './admin-profile/admin-profile.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HostComponent } from './host/host.component';
 
 @Component({
   selector: 'app-root',
@@ -38,6 +39,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ParentComponent,
     AdminProfileComponent,
     UserProfileComponent,
+    HostComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
