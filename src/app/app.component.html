@@ -1,8 +1,9 @@
 <!-- constructor and ngOnInit -->
 <div>
     <button (click)="changeTitle()">change title</button>
+    <button (click)="updateCounter()">change counter</button>
     <button (click)="toggleHook()">toggle component</button>
-    <app-life-cycle-hooks [title]="title" *ngIf="isActive"></app-life-cycle-hooks>
+    <app-life-cycle-hooks [title]="title" [counter]="counter" *ngIf="isActive"></app-life-cycle-hooks>
 </div>
 
 <!-- host binding and host listners -->

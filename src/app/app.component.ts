@@ -27,7 +27,7 @@ import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.com
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'testProject';
+  title = {name: 'testProject'};
   counter: number = 20;
   recieveDataFromChild = '';
   isActive = true; 
@@ -37,10 +37,14 @@ export class AppComponent {
   }
 
   changeTitle(){
-    this.title = 'random string' + Math.random();
+    this.title.name = 'random string' + Math.random();
   }
 
   toggleHook(){
     this.isActive = !this.isActive;
+  }
+
+  updateCounter(){
+    this.counter++;
   }
 }

@@ -8,7 +8,8 @@ import { Component, DestroyRef, Input, SimpleChanges } from '@angular/core';
   styleUrl: './life-cycle-hooks.component.scss'
 })
 export class LifeCycleHooksComponent {
-  @Input() title = '';
+  @Input() title = {name: ''};
+  @Input() counter = 0;
   name = '';
   constructor(private destroyRef: DestroyRef){
     console.log('constructor called');
@@ -20,12 +21,20 @@ export class LifeCycleHooksComponent {
 
   ngOnInit(){
     console.log('ngOnInit called');
+    setTimeout(() => {
+      console.log('set time out');
+      this.name = this.title.name + 'added on ngOnInit'
+    }, 2000);
     // this.name = this.title + 'added ngOnInit'
   }
 
   ngOnChanges(changes: SimpleChanges){
     console.log('ngOnChange call')
     console.log(changes)
+  }
+
+  ngDoCheck(){
+    console.log('ngDoCheck call')
   }
 
   ngOnDestroy(){
