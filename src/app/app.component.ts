@@ -9,6 +9,7 @@ import { CardComponent } from './card/card.component';
 import { HoverClickComponent } from './hover-click/hover-click.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 import { CheckedLifeCycleComponent } from './checked-life-cycle/checked-life-cycle.component';
+import { AfterRenderComponent } from './after-render/after-render.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { CheckedLifeCycleComponent } from './checked-life-cycle/checked-life-cyc
     HoverClickComponent,
     LifeCycleHooksComponent,
     CheckedLifeCycleComponent,
+    AfterRenderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
