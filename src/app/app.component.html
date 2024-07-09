@@ -1,7 +1,12 @@
-<!-- ********@ViewChild -->
+<!-- ******ViewChild -->
 <div>
-    <app-view-child-example></app-view-child-example>
+    <app-task *ngFor="let task of tasks" [taskName]="task"></app-task>
 </div>
+
+<!-- ********@ViewChild -->
+<!-- <div>
+    <app-view-child-example></app-view-child-example>
+</div> -->
 
 <!-- ******after render -->
 <!-- <div>
