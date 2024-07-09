@@ -12,6 +12,8 @@ import { CheckedLifeCycleComponent } from './checked-life-cycle/checked-life-cyc
 import { AfterRenderComponent } from './after-render/after-render.component';
 import { ViewChildExampleComponent } from './view-child-example/view-child-example.component';
 import { TaskComponent } from './task/task.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +32,8 @@ import { TaskComponent } from './task/task.component';
     AfterRenderComponent,
     ViewChildExampleComponent,
     TaskComponent,
+    ChildComponent,
+    ParentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
