@@ -10,6 +10,7 @@ import { HoverClickComponent } from './hover-click/hover-click.component';
 import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 import { CheckedLifeCycleComponent } from './checked-life-cycle/checked-life-cycle.component';
 import { AfterRenderComponent } from './after-render/after-render.component';
+import { ViewChildExampleComponent } from './view-child-example/view-child-example.component';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +27,7 @@ import { AfterRenderComponent } from './after-render/after-render.component';
     LifeCycleHooksComponent,
     CheckedLifeCycleComponent,
     AfterRenderComponent,
+    ViewChildExampleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
