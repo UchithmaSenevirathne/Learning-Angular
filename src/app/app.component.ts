@@ -30,6 +30,7 @@ export class AppComponent {
   title = 'testProject';
   counter: number = 20;
   recieveDataFromChild = '';
+  isActive = true; 
 
   dataRecieved(data: string){
     this.recieveDataFromChild = data;
@@ -37,5 +38,9 @@ export class AppComponent {
 
   changeTitle(){
     this.title = 'random string' + Math.random();
+  }
+
+  toggleHook(){
+    this.isActive = !this.isActive;
   }
 }
