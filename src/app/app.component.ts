@@ -34,4 +34,8 @@ export class AppComponent {
   dataRecieved(data: string){
     this.recieveDataFromChild = data;
   }
+
+  changeTitle(){
+    this.title = 'random string' + Math.random();
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-life-cycle-hooks',
@@ -12,10 +12,16 @@ export class LifeCycleHooksComponent {
   name = '';
   constructor(){
     console.log('constructor called');
+    // console.log(this.title)
   }
 
   ngOnInit(){
     console.log('ngOnInit called');
-    this.name = this.title + 'added ngOnInit'
+    // this.name = this.title + 'added ngOnInit'
+  }
+
+  ngOnChanges(changes: SimpleChanges){
+    console.log('ngOnChange call')
+    console.log(changes)
   }
 }
