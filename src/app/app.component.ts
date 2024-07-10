@@ -37,8 +37,8 @@ import { HostComponent } from './host/host.component';
     TaskComponent,
     ChildComponent,
     ParentComponent,
-    AdminProfileComponent,
-    UserProfileComponent,
+    // AdminProfileComponent,
+    // UserProfileComponent,
     HostComponent,
   ],
   templateUrl: './app.component.html',
@@ -53,10 +53,17 @@ export class AppComponent {
 
   isAdmin = true;
 
+  // lazy load
+  profileComponent: { new (): AdminProfileComponent | UserProfileComponent} | null = null;
+
   @ViewChildren(TaskComponent, {read: ElementRef}) taskComponent!: QueryList<ElementRef>;
 
   dataRecieved(data: string){
     this.recieveDataFromChild = data;
+  }
+
+  ngOnInit(){
+    this.getProfileComponent();
   }
 
   ngAfterViewInit(){
@@ -72,8 +79,17 @@ export class AppComponent {
     }, 3000)
   }
 
-  getProfileComponent() {
-    return this.isAdmin ? AdminProfileComponent : UserProfileComponent;
+  async getProfileComponent() {
+    // lazy load
+    if(this.isAdmin){
+        const {AdminProfileComponent} = await import('./admin-profile/admin-profile.component');
+        this.profileComponent = AdminProfileComponent
+    }else {
+      const {UserProfileComponent} = await import('./user-profile/user-profile.component');
+      this.profileComponent = UserProfileComponent;
+    }
+
+    // return this.isAdmin ? AdminProfileComponent : UserProfileComponent;
   }
 
   changeTitle(){
